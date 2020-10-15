@@ -5,13 +5,10 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import net.guides.springboot2.springboot2jpacrudexample.model.Workers;
+import net.guides.springboot2.springboot2jpacrudexample.model.Employee;
+
 
 @Repository
-public interface WorkerRepository extends JpaRepository<Workers,Long>{
-
-	List<Workers> save(List<Workers> l1);
-
-	
-
+public interface EmployeeRepository  extends JpaRepository<Employee,String>{
+	List<Employee> save(List<Employee> l1);
 }
